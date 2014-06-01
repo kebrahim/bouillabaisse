@@ -108,7 +108,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-import
-  bcrypt-ruby (~> 3.0.0)
+  bcrypt-ruby
   curb
   enumerize
   jquery-rails
