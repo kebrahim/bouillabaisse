@@ -1,4 +1,6 @@
 Bouillabaisse::Application.routes.draw do
+  resources :locations
+
   resources :sessions
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
