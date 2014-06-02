@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fish:</strong>
+  <%= @report.fish %>
+</p>
+
+<p>
+  <strong>Photo url:</strong>
+  <%= @report.photo_url %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @report.user %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @report.length %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @report.weight %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @report.location %>
+</p>
+
+<%= link_to 'Edit', edit_report_path(@report) %> |
+<%= link_to 'Back', reports_path %>

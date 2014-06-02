@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fish_id: 
+  photo_url: MyString
+  user_id: 
+  length: 1.5
+  weight: 1.5
+  location_id: 
+
+two:
+  fish_id: 
+  photo_url: MyString
+  user_id: 
+  length: 1.5
+  weight: 1.5
+  location_id: 

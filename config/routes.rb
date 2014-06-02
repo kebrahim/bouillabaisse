@@ -1,4 +1,6 @@
 Bouillabaisse::Application.routes.draw do
+  resources :reports
+
   resources :locations
 
   resources :sessions

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140602215705) do
+ActiveRecord::Schema.define(version: 20140602215836) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,21 @@ ActiveRecord::Schema.define(version: 20140602215705) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "reports", force: true do |t|
+    t.integer  "fish_id"
+    t.string   "photo_url"
+    t.integer  "user_id"
+    t.float    "length"
+    t.float    "weight"
+    t.integer  "location_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "reports", ["fish_id"], name: "index_reports_on_fish_id", using: :btree
+  add_index "reports", ["location_id"], name: "index_reports_on_location_id", using: :btree
+  add_index "reports", ["user_id"], name: "index_reports_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "first_name"
